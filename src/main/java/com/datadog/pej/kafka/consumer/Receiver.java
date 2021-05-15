@@ -33,12 +33,12 @@ public class Receiver {
   public void receive(String payload, ConsumerRecord<?,?> cr) {
 
       LOGGER.info("received payload='{}'", payload);
-      Quote quote = restTemplate.getForObject("https://gturnquist-quoters.cfapps.io/api/random", Quote.class);
-      LOGGER.info(quote.toString());
+      //Quote quote = restTemplate.getForObject("https://gturnquist-quoters.cfapps.io/api/random", Quote.class);
+      //LOGGER.info(quote.toString());
       //latch.countDown();
 
-      String result = restTemplate.getForObject("https://www.google.fr", String.class);
-      LOGGER.info(result);
+      //String result = restTemplate.getForObject("https://www.google.fr", String.class);
+      //LOGGER.info(result);
       latch.countDown();
 
 
