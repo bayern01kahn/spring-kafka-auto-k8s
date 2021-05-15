@@ -1,0 +1,7 @@
+
+.gradle*
+.idea*
+build/*
+out/*
+spring-kafka-auto-k8s.iml
+logs/springkafkak8s.log
